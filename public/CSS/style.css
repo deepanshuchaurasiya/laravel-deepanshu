@@ -1,0 +1,485 @@
+:root {
+    --primary_color: #59b2ab;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f2f8fe;
+}
+
+/* navbar start */
+.collapse ul li {
+    padding: 0px 5px;
+}
+
+.collapse ul li a {
+    font-size: 17px;
+}
+
+.collapse ul li a:hover {
+    color: #0d6efd;
+}
+
+.navbar .started_btn {
+    transition: all linear .2s;
+}
+
+.navbar .started_btn:hover {
+    background-color: #4383e3;
+}
+
+/* Navbar style end */
+
+/* about start */
+.About-us h2 {
+    color: #4d4e54;
+    position: relative;
+}
+
+.About-us h2::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    top: 45px;
+    background-color: var(--primary_color);
+    border-radius: 10px;
+}
+
+.About-us h2::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    top: 51px;
+    left: 70px;
+    background-color: var(--primary_color);
+    border-radius: 10px;
+}
+
+.About-us p {
+    color: gray;
+    font-size: 1.1rem;
+    word-spacing: 1px;
+}
+
+/* about end */
+
+/* Gallery start */
+.album .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+}
+
+.album .responsive-container-block.bg {
+    max-width: 1320px;
+    margin: 0 0 0 0;
+    justify-content: space-between;
+}
+
+.album .img {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.album .responsive-container-block.img-cont {
+    flex-direction: column;
+    max-width: 33.3%;
+    min-height: auto;
+    margin: 0 0 0 0;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.album .img.img-big {
+    height: 50%;
+    margin: 0 0 16px 0;
+}
+
+
+/* Full-screen modal customization */
+
+
+/* Full-screen modal customization */
+
+.modal-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.modal-content {
+    background: transparent;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: relative;
+}
+
+#modalImage {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.modal-body {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    padding: 1px 1px;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+
+}
+
+.close-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Gallery end */
+
+/* contact start */
+.contact-container {
+    margin: auto;
+    padding: 40px 30px;
+}
+
+.contact-info {
+    background: var(--primary_color);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-box {
+    color: white;
+    border-radius: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item h6 {
+    font-size: 20px;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background: #ffffff33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.btn1 {
+    background-color: var(--primary_color);
+}
+
+.btn1:hover {
+    background-color: #086059;
+}
+
+.form-control {
+    resize: none;
+}
+
+/* contact end */
+
+
+/* Footer start */
+.footer{
+    background-color: #59b2ab;
+}
+.footer .icon img{
+    height:110px;
+}
+.footer .summery{
+    color:#fff;
+    font-weight:400;
+    font-size:16px;
+}
+.footer .widget-title1, .widget-title2 ,.widget-title3{
+    color: hsl(175, 61%, 16%);
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+}
+.footer .widget-title1::before,.footer .widget-title2::before,.footer .widget-title3::before{
+    position: absolute;
+    content: "";
+    height:2px;
+    top:100%;
+    background-color: #fff;
+}
+.footer .widget-title1::before{
+    width: 20%;
+}
+.footer .widget-title2::before{
+    width: 20%;
+}
+.footer .widget-title3::before{
+    width: 20%;
+}
+.footer .position-after1::after,.footer .position-after2::after,.footer .position-after3::after{
+    position: absolute;
+    content: "";
+    height:3px;
+    top:115%;
+    left:40%;
+    background-color: hsl(175, 61%, 16%);
+}
+.footer .position-after1::after{
+    width: 24%;
+    left: 10%;
+}
+.footer .position-after2::after{
+    width: 30%;
+    left: 10%;
+}
+.footer .position-after3::after{
+    width: 15%;
+    left: 10%;
+}
+.footer .connect-section ul{
+    text-decoration: none;  
+}
+.footer .connect-section li{
+    list-style: none;
+    line-height: 30px;
+    color:#fff; 
+}
+.footer .connect-section li a{
+    text-decoration: none;
+    padding-inline: 10px;  
+    color:#fff; 
+}
+
+/*--- quick-section--- */
+.footer .quick-section ul{
+    text-decoration: none;
+}
+.footer .quick-section li{
+    list-style: none;
+    line-height: 30px;
+    color:#fff; 
+}
+.footer .quick-section li a{
+    text-decoration: none;
+    padding-inline: 10px;  
+    color:#fff; 
+
+}
+.footer .findus-section ul{
+    text-decoration: none;
+}
+.footer .findus-section li{
+    list-style: none;
+    line-height: 30px;
+    color:#fff; 
+    
+}
+.footer .findus-section li a{
+    text-decoration: none;
+    padding-inline: 10px;  
+    color:#fff; 
+
+}
+ .footer ul li:hover,.location{
+    color:hsl(176, 42%, 20%);
+    letter-spacing: .2px;
+}
+/* Footer end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* when we hover on the dropdown the the section will be show */
+@media (hover: hover) {
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .album .img {
+        margin: 0 0 18px 0;
+    }
+}
+
+/* media query here */
+@media (max-width: 768px) {
+    .navbar_container_fluid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .navbar-toggler {
+        order: 3;
+        margin-left: auto;
+    }
+
+    .started_btn {
+        order: 2;
+        margin-left: 10px;
+    }
+
+    .album .img {
+        max-width: 32.5%;
+        margin: 0 0 0 0;
+    }
+
+    .album .responsive-container-block.bg {
+        flex-direction: column;
+    }
+
+    .album .responsive-container-block.img-cont {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .album .img.img-big {
+        max-width: 49%;
+        margin: 0 0 0 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .album .img {
+        max-width: 94%;
+        margin: 0 0 25px 0;
+    }
+
+    .album .responsive-container-block.img-cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .album .img.img-big {
+        max-width: 94%;
+        margin: 0 0 25px 0;
+    }
+
+    .album .img.img-last {
+        margin: 0 0 5px 0;
+    }
+}
+
+@media(max-width:425px){
+    .footer{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    } 
+    .footer .summery{
+     font-size: 15px;
+    }
+    .footer .widget-title1::before{
+     width: 15%;
+ }
+ .footer .widget-title2::before{
+     width: 15%;
+ }
+ .footer .widget-title3::before{
+     width: 15%;
+ }
+ 
+ .footer .position-after1::after{
+     width: 20%;
+     left: 10%;
+ }
+ .footer .position-after2::after{
+     width: 20%;
+     left: 10%;
+ }
+ .footer .position-after3::after{
+     width: 11%;
+     left: 10%;
+ }
+ .footer li {
+     font-size:14px;
+ }
+ 
+ }
+
+@media (max-width: 355px) {
+    .navbar_container_fluid {
+        padding: 0px;
+    }
+
+    .started_btn {
+        padding: 8px 1px;
+        font-size: 13px;
+        margin-left: 0px;
+    }
+
+}
